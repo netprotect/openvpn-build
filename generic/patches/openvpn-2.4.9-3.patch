@@ -1,0 +1,13 @@
+diff -u -r -x .DS_Store openvpn-2.4.9.old/src/openvpn/options.h openvpn-2.4.9.new/src/openvpn/options.h
+--- openvpn-2.4.9.old/src/openvpn/options.h	2020-07-01 10:25:01.000000000 -0500
++++ openvpn-2.4.9.new/src/openvpn/options.h	2020-07-01 10:25:01.000000000 -0500
+@@ -101,6 +101,9 @@
+     int connect_retry_seconds;
+     int connect_retry_seconds_max;
+     int connect_timeout;
++    int xormethod;
++    const char *xormask;
++    int xormasklen;
+     struct http_proxy_options *http_proxy_options;
+     const char *socks_proxy_server;
+     const char *socks_proxy_port;
